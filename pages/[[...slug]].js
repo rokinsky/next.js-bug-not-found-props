@@ -2,14 +2,14 @@ const Slug = () => null;
 
 export const getStaticProps = () => {
   return {
-    unstable_notFound: true,
+    notFound: true,
   };
 };
 
 export const getStaticPaths = () => {
   return {
     paths: [],
-    fallback: true,
+    fallback: "blocking",
   };
 };
 
